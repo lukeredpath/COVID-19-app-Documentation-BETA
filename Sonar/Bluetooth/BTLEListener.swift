@@ -64,11 +64,12 @@ class ConcreteBTLEListener: NSObject, BTLEListener, CBCentralManagerDelegate, CB
     
     func centralManager(_ central: CBCentralManager, willRestoreState dict: [String : Any]) {
         if let restoredPeripherals = dict[CBCentralManagerRestoredStatePeripheralsKey] as? [CBPeripheral] {
-            logger.info("restoring \(restoredPeripherals.count) \(restoredPeripherals.count == 1 ? "peripheral" : "peripherals") for central \(central)")
-            for peripheral in restoredPeripherals {
-                peripherals[peripheral.identifier] = peripheral
-                peripheral.delegate = self
-            }
+            // DISABLE PERIPHERAL STATE RESTORATION 
+//            logger.info("restoring \(restoredPeripherals.count) \(restoredPeripherals.count == 1 ? "peripheral" : "peripherals") for central \(central)")
+//            for peripheral in restoredPeripherals {
+//                peripherals[peripheral.identifier] = peripheral
+//                peripheral.delegate = self
+//            }
         } else {
             logger.info("no peripherals to restore for \(central)")
         }

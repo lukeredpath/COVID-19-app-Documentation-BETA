@@ -1759,6 +1759,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F618A562245C682500D89517 /* Sonar.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZZVQ8B5T69;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.lukeredpath.nhs.sonar;
 			};
 			name = Debug;
 		};
@@ -1766,6 +1768,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F618A562245C682500D89517 /* Sonar.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = ZZVQ8B5T69;
+				PRODUCT_BUNDLE_IDENTIFIER = co.uk.lukeredpath.nhs.sonar;
 			};
 			name = Release;
 		};
